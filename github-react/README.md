@@ -98,14 +98,12 @@ cd __templateName__
 ```bash
 yarn init
 
-yarn add webpack
-yarn add react react-dom babel-preset-react
-yarn add -D babel-loader babel-preset-env
-yarn add -D html-webpack-plugin
+yarn add webpack react react-dom babel-preset-react
+
+yarn add -D babel-loader babel-preset-env html-webpack-plugin
 
 # install Material UI library
-yarn add @mui/material @emotion/react @emotion/styled
-yarn add @mui/icons-material
+yarn add @mui/material @emotion/react @emotion/styled @mui/icons-material
 ```
 ### Add build script to `package.json
 ```json
