@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-<!-- <img src="NNNNNNNNNNNNN" width="400"> -->
+<!-- <img src="assets/NNNNNNNNNNNNN" width="400"> -->
 
 
 <h2 align="center">____________________</h2>
@@ -24,12 +24,8 @@
 ### 
 ##### 
 ```bash
-yarn
-yarn start
 ``` 
-## Open Broswer to [`http://localhost:3000`](http://localhost:3000)
 
----
 
 
 
@@ -43,7 +39,7 @@ yarn start
 # Summary
 ### -  *[Quick start](#Quick-start)*
 ### -  *[Installation](#Installation)*
-### -  *[Deveopment](#For-developers)*
+### -  *[For developers](#For-developers)*
 ### -  *[Contributors](#Contributors)*
 ### -  *[Links](#Links)*
 ### -  *[License](#License)*
@@ -67,23 +63,6 @@ yarn start
 cd ~
 git clone https://github.com/wisehackermonkey/__templateName__.git
 cd __templateName__
-yarn
-yarn start
-```
-
-
-# List of command
-## Build for production
-```bash
-yarn build
-```
-## Run Tests
-```bash
-yarn test
-```
-## Run CI
-```bash
-yarn ci
 ```
 
 
@@ -97,8 +76,7 @@ yarn ci
 
  -----------------
 # Screenshots
-- <!-- <img src="NNNNNNNNNNNNN" width="400"> -->
-
+- 
 
 
 
@@ -113,10 +91,31 @@ yarn ci
 
 
 -----------------
-# Deveopment
-### 
+# For developers
+### Setup Babel
 ```bash
+yarn init
+
+yarn add webpack
+yarn add react react-dom babel-preset-react
+yarn add -D babel-loader babel-preset-env
+yarn add -D html-webpack-plugin
 ```
+### Add build script to `package.json
+```json
+{
+    ... 
+    "scripts": {
+        "start": "webpack serve --open --config webpack.config.js --hot --inline --progress --port 3000 ",
+        "build": "webpack build --mode production --config webpack.config.js",
+    }
+    ...
+```
+### Start Project
+```bash
+yarn start
+```
+
 
 
 
@@ -190,11 +189,8 @@ docker build -t wisehackermonkey/__templateName__:latest .
 docker login
 docker push wisehackermonkey/__templateName__:latest
 ```
-# Deploy on netlify
+# Install React
+```bash
+
 ```
-npm install netlify-cli -g
-netlify login
-netlify deploy
-netlify deploy --prod
-```
--->
+ -->
