@@ -94,23 +94,22 @@ cd __templateName__
 
 -----------------
 # For developers
-### Setup Babel
+### Setup React, Babel, and Webpack 
 ```bash
-yarn init
 
-yarn add webpack react react-dom babel-preset-react
+# Install React, Material UI library
+yarn add react react-dom @emotion/react @emotion/styled @fontsource/roboto @mui/icons-material @mui/material @mui/material @emotion/react @emotion/styled @mui/icons-material
 
-yarn add -D babel-loader babel-preset-env html-webpack-plugin
-
-# install Material UI library
-yarn add @mui/material @emotion/react @emotion/styled @mui/icons-material
+# Install webpack dependencies
+yarn add -D webpack @babel/core @babel/plugin-proposal-class-properties @babel/preset-env @babel/preset-react file-loader babel-loader css-loader jest start-server-and-test style-loader  webpack-cli webpack-dev-server  babel-preset-env html-webpack-plugin  uglifyjs-webpack-plugin
+ 
 ```
 ### Add build script to `package.json
 ```json
 {
     ... 
     "scripts": {
-        "start": "webpack serve --open --config webpack.config.js --hot --inline --progress --port 3000 ",
+        "start": "webpack serve --open --config webpack.config.js --hot --progress --port 3000 ",
         "build": "webpack build --mode production --config webpack.config.js",
     }
     ...
