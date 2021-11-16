@@ -7,6 +7,6 @@
     ENVIRONMENT = "PRODUCTION"
     functions = "lambda" # yarn add netlify-lambda
 [[redirects]]
-    from = "/api/"
+    from = "/api/v1/:splat"
     to = "/.netlify/functions/:splat"
     status = 200
