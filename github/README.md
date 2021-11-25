@@ -24,8 +24,6 @@
 ### 
 ##### 
 ```bash
-yarn
-yarn start
 ``` 
 ## Open Broswer to [`http://localhost:3000`](http://localhost:3000)
 
@@ -67,24 +65,8 @@ yarn start
 cd ~
 git clone https://github.com/wisehackermonkey/__templateName__.git
 cd __templateName__
-yarn
-yarn start
 ```
 
-
-# List of command
-## Build for production
-```bash
-yarn build
-```
-## Run Tests
-```bash
-yarn test
-```
-## Run CI
-```bash
-yarn ci
-```
 
 
 
