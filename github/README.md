@@ -11,35 +11,10 @@
 
 <h4 align="center">________________________</h4>
 
-
-
-
-
-
-
-
-
-
-# Quick start
-### 
-##### 
-```bash
-``` 
-## Open Broswer to [`http://localhost:3000`](http://localhost:3000)
-
 ---
 
 
-
-
-
-
-
-
-
-
 # Summary
-### -  *[Quick start](#Quick-start)*
 ### -  *[Installation](#Installation)*
 ### -  *[Deveopment](#For-developers)*
 ### -  *[Contributors](#Contributors)*
