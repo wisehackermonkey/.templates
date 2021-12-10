@@ -139,8 +139,13 @@ cd __templateName__
 ##### Made with [contributors-img](https://contrib.rocks).
 
 -----------------
+
+
 # License
+
 #### MIT © wisehackermonkey
+<img src="osi-logo.png" width="100">
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ```bash
 by oran collins
