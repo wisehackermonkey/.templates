@@ -24,9 +24,9 @@
 
 #     - name: Build webpack to dist folder
 #       run: |
-#         yarn
-#         yarn run build
-#         cp ./src/index.html ./build/index.html
+#         npm install
+#         npm run build
+#         cp ./index.html ./dist/index.html
 #     - name: Deploy to GH Page
 #       uses: JamesIves/github-pages-deploy-action@4.1.1
 #       with:
